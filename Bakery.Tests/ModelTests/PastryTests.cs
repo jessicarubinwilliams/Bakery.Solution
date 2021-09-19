@@ -4,7 +4,7 @@ using Bakery.Models;
 namespace Bakery.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class PastryTests
   {
     
   }
