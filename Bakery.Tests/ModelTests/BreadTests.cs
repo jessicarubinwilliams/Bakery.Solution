@@ -21,5 +21,14 @@ namespace Bakery.Tests
       int result = newBread.NumLoaves;
       Assert.AreEqual(numLoaves, result);
     }
+
+    [TestMethod]
+    public void CalculateSubTotal_ReturnsSubTotal_Int()
+    {
+      int numLoaves = 5;
+      Bread newBread = new Bread(numLoaves);
+      int result = newBread.CalculateSubTotal();
+      Assert.AreEqual(20, result);
+    }
   }
 }
