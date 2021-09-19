@@ -8,5 +8,10 @@ namespace Bakery.Models
     {
       NumPastries = pastries;
     }
+
+    public int CalculateSubTotal()
+    {
+      return 7;
+    }
   }
 }

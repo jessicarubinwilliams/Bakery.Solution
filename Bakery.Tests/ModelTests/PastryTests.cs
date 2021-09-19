@@ -17,10 +17,19 @@ namespace Bakery.Tests
     [TestMethod]
     public void GetNumPastries_ReturnsNumPastries_Int()
     {
-    int numPastries = 5;
-    Pastry newPastry = new Pastry(numPastries);
-    int result = newPastry.NumPastries;
-    Assert.AreEqual(numPastries, result);
+      int numPastries = 5;
+      Pastry newPastry = new Pastry(numPastries);
+      int result = newPastry.NumPastries;
+      Assert.AreEqual(numPastries, result);
+    }
+
+    [TestMethod]
+    public void CalculateSubTotal_ReturnsSubTotal_Int()
+    {
+      int numPastries = 5;
+      Pastry newPastry = new Pastry(numPastries);
+      int result = newPastry.CalculateSubTotal();
+      Assert.AreEqual(9, result);
     }
   }
 }
